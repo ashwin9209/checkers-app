@@ -1,28 +1,36 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+  <div id="app">    
+    <cHeader></cHeader>
+    <cGridview></cGridview>
+    <cFooter></cFooter>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import cHeader from './components/header'
+import cGridview from './components/gridview'
+import cFooter from './components/footer'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    cHeader, cGridview, cFooter
   }
 }
 </script>
 
 <style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: Tahoma, Helvetica, sans-serif;
+  font-size: 1.2em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
